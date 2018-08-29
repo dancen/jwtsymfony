@@ -1,0 +1,77 @@
+api_1.0_get_team:
+    path: "/api/1.0/team"   
+    defaults: { _controller: AppBundle:ApiTeam:getTeam, _format: json }
+    requirements:
+      _method: GET  
+
+api_1.0_get_teams:
+    path: "/api/1.0/teams"   
+    defaults: { _controller: AppBundle:ApiTeam:getTeams, _format: json }
+    requirements:
+      _method: GET  
+      
+api_1.0_get_teams_by_league:
+    path: "/api/1.0/teamsbyleague"   
+    defaults: { _controller: AppBundle:ApiTeam:getTeamsByLeague, _format: json }
+    requirements:
+      _method: GET 
+       
+api_1.0_new_team:
+    path: "/api/1.0/newteam"   
+    defaults: { _controller: AppBundle:ApiTeam:newTeam, _format: json }
+    requirements:
+      _method: POST
+      
+api_1.0_update_team:
+    path: "/api/1.0/updateteam"   
+    defaults: { _controller: AppBundle:ApiTeam:updateTeam, _format: json }
+    requirements:
+      _method: PUT
+      
+api_1.0_delete_team:
+    path: "/api/1.0/deleteteam"   
+    defaults: { _controller: AppBundle:ApiTeam:deleteTeam, _format: json }
+    requirements:
+      _method: DELETE      
+      
+api_1.0_new_league:
+    path: "/api/1.0/newleague"   
+    defaults: { _controller: AppBundle:ApiLeague:newLeague, _format: json }
+    requirements:
+      _method: POST
+      
+api_1.0_update_league:
+    path: "/api/1.0/updateleague"   
+    defaults: { _controller: AppBundle:ApiLeague:updateLeague, _format: json }
+    requirements:
+      _method: PUT
+      
+api_1.0_delete_league:
+    path: "/api/1.0/deleteleague"   
+    defaults: { _controller: AppBundle:ApiLeague:deleteLeague, _format: json }
+    requirements:
+      _method: DELETE
+      
+api_1.0_get_league:
+    path: "/api/1.0/league"   
+    defaults: { _controller: AppBundle:ApiLeague:getLeague, _format: json }
+    requirements:
+      _method: GET  
+
+api_1.0_get_leagues:
+    path: "/api/1.0/leagues"   
+    defaults: { _controller: AppBundle:ApiLeague:getLeagues, _format: json }
+    requirements:
+      _method: GET  
+
+api_1.0_create_token:
+    path: "/api/1.0/newtoken"   
+    defaults: { _controller: AppBundle:ApiToken:newToken, _format: json }
+    requirements:
+      _method: GET  
+
+      
+api_login_check:
+    path: /api/login_check
+    
+     
